@@ -1,0 +1,10 @@
+<form autocapitalize="off" (ngSubmit)="buscar();">
+    <input 
+        type="text" 
+        class="form-control" 
+        placeholder="Buscar país..."
+        [(ngModel)]="termino"
+        (input)="teclaPresionada()"
+        [placeholder]="placeholder"
+        name="termino">
+</form>
